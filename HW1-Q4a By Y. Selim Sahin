@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+
+int housepriceCalc (int popularity , int sizetype) ;  /*function prototype */
+
+void main (){
+	int popularity ;
+	int sizetype ; 
+	
+	printf("Enter popularity: ");
+	scanf("%d/n ", &popularity) ; 
+	
+	printf("Enter size: ");
+	scanf("%d/n ", &sizetype) ; 
+	
+	printf ("Home value is: %d" ,housepriceCalc (popularity , sizetype) );
+
+
+}
+
+
+
+
+int housepriceCalc (int popularity , int sizetype) {
+return (pow(popularity, 3 ) + pow(sizetype, 2 ) ) * 10000 ; 
+}
